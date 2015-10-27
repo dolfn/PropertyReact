@@ -6,13 +6,13 @@
 //  Copyright © 2015 Dolfn. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DCCReactiveViewController.h"
 
-@interface ViewController ()
+@interface DCCReactiveViewController ()
 
 @end
 
-@implementation ViewController
+@implementation DCCReactiveViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

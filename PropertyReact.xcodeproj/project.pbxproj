@@ -9,27 +9,59 @@
 /* Begin PBXBuildFile section */
 		A1D58E761BDB64DB008F72D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58E751BDB64DB008F72D8 /* main.m */; };
 		A1D58E791BDB64DB008F72D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58E781BDB64DB008F72D8 /* AppDelegate.m */; };
-		A1D58E7C1BDB64DB008F72D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58E7B1BDB64DB008F72D8 /* ViewController.m */; };
+		A1D58E7C1BDB64DB008F72D8 /* DCCReactiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58E7B1BDB64DB008F72D8 /* DCCReactiveViewController.m */; };
 		A1D58E7F1BDB64DB008F72D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D58E7D1BDB64DB008F72D8 /* Main.storyboard */; };
 		A1D58E811BDB64DB008F72D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D58E801BDB64DB008F72D8 /* Assets.xcassets */; };
 		A1D58E841BDB64DB008F72D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D58E821BDB64DB008F72D8 /* LaunchScreen.storyboard */; };
+		A1D58E8E1BDB6979008F72D8 /* DCCPropertyReactor.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58E8D1BDB6979008F72D8 /* DCCPropertyReactor.m */; settings = {ASSET_TAGS = (); }; };
+		A1D58E921BDB6C6C008F72D8 /* NSObject+DCCObserverRemovalHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58E911BDB6C6C008F72D8 /* NSObject+DCCObserverRemovalHelper.m */; settings = {ASSET_TAGS = (); }; };
+		A1D58EA41BDB8261008F72D8 /* DCCPropertyReactingTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58EA31BDB8261008F72D8 /* DCCPropertyReactingTestCase.m */; settings = {ASSET_TAGS = (); }; };
+		A1D58EA91BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58EA81BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1D58E9C1BDB81A0008F72D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1D58E691BDB64DB008F72D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1D58E701BDB64DB008F72D8;
+			remoteInfo = PropertyReact;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A1D58E711BDB64DB008F72D8 /* PropertyReact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropertyReact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D58E751BDB64DB008F72D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1D58E771BDB64DB008F72D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1D58E781BDB64DB008F72D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A1D58E7A1BDB64DB008F72D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A1D58E7B1BDB64DB008F72D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A1D58E7A1BDB64DB008F72D8 /* DCCReactiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCCReactiveViewController.h; sourceTree = "<group>"; };
+		A1D58E7B1BDB64DB008F72D8 /* DCCReactiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCCReactiveViewController.m; sourceTree = "<group>"; };
 		A1D58E7E1BDB64DB008F72D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1D58E801BDB64DB008F72D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1D58E831BDB64DB008F72D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1D58E851BDB64DB008F72D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1D58E8C1BDB6979008F72D8 /* DCCPropertyReactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCPropertyReactor.h; sourceTree = "<group>"; };
+		A1D58E8D1BDB6979008F72D8 /* DCCPropertyReactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCPropertyReactor.m; sourceTree = "<group>"; };
+		A1D58E8F1BDB6C29008F72D8 /* DCCObservableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCObservableObject.h; sourceTree = "<group>"; };
+		A1D58E901BDB6C6C008F72D8 /* NSObject+DCCObserverRemovalHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCCObserverRemovalHelper.h"; sourceTree = "<group>"; };
+		A1D58E911BDB6C6C008F72D8 /* NSObject+DCCObserverRemovalHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCCObserverRemovalHelper.m"; sourceTree = "<group>"; };
+		A1D58E971BDB81A0008F72D8 /* PropertyReactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropertyReactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D58E9B1BDB81A0008F72D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1D58EA31BDB8261008F72D8 /* DCCPropertyReactingTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCPropertyReactingTestCase.m; sourceTree = "<group>"; };
+		A1D58EA51BDB8300008F72D8 /* DCCObjectToObserveUsedForTestingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCObjectToObserveUsedForTestingProtocol.h; sourceTree = "<group>"; };
+		A1D58EA71BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCObjectToObserveUsedForTesting.h; sourceTree = "<group>"; };
+		A1D58EA81BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCObjectToObserveUsedForTesting.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A1D58E6E1BDB64DB008F72D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1D58E941BDB81A0008F72D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				A1D58E731BDB64DB008F72D8 /* PropertyReact */,
+				A1D58E981BDB81A0008F72D8 /* PropertyReactTests */,
 				A1D58E721BDB64DB008F72D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				A1D58E711BDB64DB008F72D8 /* PropertyReact.app */,
+				A1D58E971BDB81A0008F72D8 /* PropertyReactTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,10 +92,11 @@
 		A1D58E731BDB64DB008F72D8 /* PropertyReact */ = {
 			isa = PBXGroup;
 			children = (
+				A1D58E8B1BDB6527008F72D8 /* PropertyReactiveObject */,
 				A1D58E771BDB64DB008F72D8 /* AppDelegate.h */,
 				A1D58E781BDB64DB008F72D8 /* AppDelegate.m */,
-				A1D58E7A1BDB64DB008F72D8 /* ViewController.h */,
-				A1D58E7B1BDB64DB008F72D8 /* ViewController.m */,
+				A1D58E7A1BDB64DB008F72D8 /* DCCReactiveViewController.h */,
+				A1D58E7B1BDB64DB008F72D8 /* DCCReactiveViewController.m */,
 				A1D58E7D1BDB64DB008F72D8 /* Main.storyboard */,
 				A1D58E801BDB64DB008F72D8 /* Assets.xcassets */,
 				A1D58E821BDB64DB008F72D8 /* LaunchScreen.storyboard */,
@@ -77,6 +112,38 @@
 				A1D58E751BDB64DB008F72D8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1D58E8B1BDB6527008F72D8 /* PropertyReactiveObject */ = {
+			isa = PBXGroup;
+			children = (
+				A1D58E8C1BDB6979008F72D8 /* DCCPropertyReactor.h */,
+				A1D58E8D1BDB6979008F72D8 /* DCCPropertyReactor.m */,
+				A1D58E8F1BDB6C29008F72D8 /* DCCObservableObject.h */,
+				A1D58E901BDB6C6C008F72D8 /* NSObject+DCCObserverRemovalHelper.h */,
+				A1D58E911BDB6C6C008F72D8 /* NSObject+DCCObserverRemovalHelper.m */,
+			);
+			name = PropertyReactiveObject;
+			sourceTree = "<group>";
+		};
+		A1D58E981BDB81A0008F72D8 /* PropertyReactTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1D58EA61BDB8351008F72D8 /* ObjectToObserveUsedForTesting */,
+				A1D58EA31BDB8261008F72D8 /* DCCPropertyReactingTestCase.m */,
+				A1D58E9B1BDB81A0008F72D8 /* Info.plist */,
+			);
+			path = PropertyReactTests;
+			sourceTree = "<group>";
+		};
+		A1D58EA61BDB8351008F72D8 /* ObjectToObserveUsedForTesting */ = {
+			isa = PBXGroup;
+			children = (
+				A1D58EA51BDB8300008F72D8 /* DCCObjectToObserveUsedForTestingProtocol.h */,
+				A1D58EA71BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.h */,
+				A1D58EA81BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.m */,
+			);
+			name = ObjectToObserveUsedForTesting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +166,24 @@
 			productReference = A1D58E711BDB64DB008F72D8 /* PropertyReact.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A1D58E961BDB81A0008F72D8 /* PropertyReactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1D58E9E1BDB81A0008F72D8 /* Build configuration list for PBXNativeTarget "PropertyReactTests" */;
+			buildPhases = (
+				A1D58E931BDB81A0008F72D8 /* Sources */,
+				A1D58E941BDB81A0008F72D8 /* Frameworks */,
+				A1D58E951BDB81A0008F72D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1D58E9D1BDB81A0008F72D8 /* PBXTargetDependency */,
+			);
+			name = PropertyReactTests;
+			productName = PropertyReactTests;
+			productReference = A1D58E971BDB81A0008F72D8 /* PropertyReactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +195,10 @@
 				TargetAttributes = {
 					A1D58E701BDB64DB008F72D8 = {
 						CreatedOnToolsVersion = 7.0.1;
+					};
+					A1D58E961BDB81A0008F72D8 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = A1D58E701BDB64DB008F72D8;
 					};
 				};
 			};
@@ -127,6 +216,7 @@
 			projectRoot = "";
 			targets = (
 				A1D58E701BDB64DB008F72D8 /* PropertyReact */,
+				A1D58E961BDB81A0008F72D8 /* PropertyReactTests */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +232,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1D58E951BDB81A0008F72D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -149,13 +246,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1D58E7C1BDB64DB008F72D8 /* ViewController.m in Sources */,
+				A1D58E7C1BDB64DB008F72D8 /* DCCReactiveViewController.m in Sources */,
 				A1D58E791BDB64DB008F72D8 /* AppDelegate.m in Sources */,
+				A1D58E921BDB6C6C008F72D8 /* NSObject+DCCObserverRemovalHelper.m in Sources */,
+				A1D58E8E1BDB6979008F72D8 /* DCCPropertyReactor.m in Sources */,
 				A1D58E761BDB64DB008F72D8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1D58E931BDB81A0008F72D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D58EA41BDB8261008F72D8 /* DCCPropertyReactingTestCase.m in Sources */,
+				A1D58EA91BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1D58E9D1BDB81A0008F72D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1D58E701BDB64DB008F72D8 /* PropertyReact */;
+			targetProxy = A1D58E9C1BDB81A0008F72D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A1D58E7D1BDB64DB008F72D8 /* Main.storyboard */ = {
@@ -279,6 +395,30 @@
 			};
 			name = Release;
 		};
+		A1D58E9F1BDB81A0008F72D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PropertyReactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dolfn.PropertyReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PropertyReact.app/PropertyReact";
+			};
+			name = Debug;
+		};
+		A1D58EA01BDB81A0008F72D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PropertyReactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dolfn.PropertyReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PropertyReact.app/PropertyReact";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -296,6 +436,14 @@
 			buildConfigurations = (
 				A1D58E891BDB64DB008F72D8 /* Debug */,
 				A1D58E8A1BDB64DB008F72D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A1D58E9E1BDB81A0008F72D8 /* Build configuration list for PBXNativeTarget "PropertyReactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D58E9F1BDB81A0008F72D8 /* Debug */,
+				A1D58EA01BDB81A0008F72D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
