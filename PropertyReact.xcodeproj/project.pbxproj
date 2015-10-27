@@ -17,6 +17,8 @@
 		A1D58E921BDB6C6C008F72D8 /* NSObject+DCCObserverRemovalHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58E911BDB6C6C008F72D8 /* NSObject+DCCObserverRemovalHelper.m */; settings = {ASSET_TAGS = (); }; };
 		A1D58EA41BDB8261008F72D8 /* DCCPropertyReactingTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58EA31BDB8261008F72D8 /* DCCPropertyReactingTestCase.m */; settings = {ASSET_TAGS = (); }; };
 		A1D58EA91BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58EA81BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.m */; settings = {ASSET_TAGS = (); }; };
+		A1D58EB01BDF81B4008F72D8 /* DCCReactiveExamplePresentationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58EAF1BDF81B4008F72D8 /* DCCReactiveExamplePresentationControl.m */; settings = {ASSET_TAGS = (); }; };
+		A1D58EB11BDF8D9D008F72D8 /* DCCObjectToObserveUsedForTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D58EA81BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		A1D58EA51BDB8300008F72D8 /* DCCObjectToObserveUsedForTestingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCObjectToObserveUsedForTestingProtocol.h; sourceTree = "<group>"; };
 		A1D58EA71BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCObjectToObserveUsedForTesting.h; sourceTree = "<group>"; };
 		A1D58EA81BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCObjectToObserveUsedForTesting.m; sourceTree = "<group>"; };
+		A1D58EAE1BDF81B4008F72D8 /* DCCReactiveExamplePresentationControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCReactiveExamplePresentationControl.h; sourceTree = "<group>"; };
+		A1D58EAF1BDF81B4008F72D8 /* DCCReactiveExamplePresentationControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCReactiveExamplePresentationControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,15 +96,8 @@
 		A1D58E731BDB64DB008F72D8 /* PropertyReact */ = {
 			isa = PBXGroup;
 			children = (
+				A1D58EAA1BDF7D9C008F72D8 /* Example */,
 				A1D58E8B1BDB6527008F72D8 /* PropertyReactiveObject */,
-				A1D58E771BDB64DB008F72D8 /* AppDelegate.h */,
-				A1D58E781BDB64DB008F72D8 /* AppDelegate.m */,
-				A1D58E7A1BDB64DB008F72D8 /* DCCReactiveViewController.h */,
-				A1D58E7B1BDB64DB008F72D8 /* DCCReactiveViewController.m */,
-				A1D58E7D1BDB64DB008F72D8 /* Main.storyboard */,
-				A1D58E801BDB64DB008F72D8 /* Assets.xcassets */,
-				A1D58E821BDB64DB008F72D8 /* LaunchScreen.storyboard */,
-				A1D58E851BDB64DB008F72D8 /* Info.plist */,
 				A1D58E741BDB64DB008F72D8 /* Supporting Files */,
 			);
 			path = PropertyReact;
@@ -144,6 +141,23 @@
 				A1D58EA81BDB8371008F72D8 /* DCCObjectToObserveUsedForTesting.m */,
 			);
 			name = ObjectToObserveUsedForTesting;
+			sourceTree = "<group>";
+		};
+		A1D58EAA1BDF7D9C008F72D8 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				A1D58E771BDB64DB008F72D8 /* AppDelegate.h */,
+				A1D58E781BDB64DB008F72D8 /* AppDelegate.m */,
+				A1D58E7A1BDB64DB008F72D8 /* DCCReactiveViewController.h */,
+				A1D58E7B1BDB64DB008F72D8 /* DCCReactiveViewController.m */,
+				A1D58EAE1BDF81B4008F72D8 /* DCCReactiveExamplePresentationControl.h */,
+				A1D58EAF1BDF81B4008F72D8 /* DCCReactiveExamplePresentationControl.m */,
+				A1D58E7D1BDB64DB008F72D8 /* Main.storyboard */,
+				A1D58E801BDB64DB008F72D8 /* Assets.xcassets */,
+				A1D58E821BDB64DB008F72D8 /* LaunchScreen.storyboard */,
+				A1D58E851BDB64DB008F72D8 /* Info.plist */,
+			);
+			name = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D58EB11BDF8D9D008F72D8 /* DCCObjectToObserveUsedForTesting.m in Sources */,
+				A1D58EB01BDF81B4008F72D8 /* DCCReactiveExamplePresentationControl.m in Sources */,
 				A1D58E7C1BDB64DB008F72D8 /* DCCReactiveViewController.m in Sources */,
 				A1D58E791BDB64DB008F72D8 /* AppDelegate.m in Sources */,
 				A1D58E921BDB6C6C008F72D8 /* NSObject+DCCObserverRemovalHelper.m in Sources */,

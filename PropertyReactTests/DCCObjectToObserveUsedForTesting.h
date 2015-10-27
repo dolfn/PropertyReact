@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "DCCObjectToObserveUsedForTestingProtocol.h"
-#import "DCCObservableObject.h"
 
-@interface DCCObjectToObserveUsedForTesting : NSObject <DCCObjectToObserveUsedForTestingProtocol, DCCObservableObject>
+@interface DCCObjectToObserveUsedForTesting : NSObject <DCCObjectToObserveUsedForTestingProtocol>
 
 @end

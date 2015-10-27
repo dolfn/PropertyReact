@@ -7,6 +7,7 @@
 //
 
 #import "DCCPropertyReactor.h"
+@import UIKit; // used to create the indexPath with row & section
 
 @interface DCCPropertyReactor()
 
@@ -132,7 +133,8 @@
     NSIndexSet *changedIndexSet = [change objectForKey:NSKeyValueChangeIndexesKey];
     NSMutableArray *changedIndexes = [NSMutableArray array];
     [changedIndexSet enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL * _Nonnull stop) {
-        [changedIndexes addObject:[NSNumber numberWithInteger:idx]];
+        NSIndexPath *indexPathToAdd = [NSIndexPath indexPathForRow:idx inSection:0];
+        [changedIndexes addObject:indexPathToAdd];
     }];
     id blockKey = [self blockKeyForObservedObject:object andPropertyName:keyPath];
     DCCBlockToRunWhenPropertyValueChange blockToExecute = [self.blockToRunByObjectAndPropertyHashCombination objectForKey:blockKey];
