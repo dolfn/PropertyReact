@@ -6,9 +6,9 @@
 //  Copyright © 2015 Dolfn. All rights reserved.
 //
 
-#import "DCCObjectToObserveUsedForTesting.h"
+#import "DCCViewModelToReactTo.h"
 
-@interface DCCObjectToObserveUsedForTesting() {
+@interface DCCViewModelToReactTo() {
     NSMutableArray *_itemsToObserve;
 }
 
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation DCCObjectToObserveUsedForTesting
+@implementation DCCViewModelToReactTo
 
 -(instancetype)init {
     self = [super init];

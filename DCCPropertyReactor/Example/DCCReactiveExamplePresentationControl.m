@@ -8,7 +8,7 @@
 
 #import "DCCReactiveExamplePresentationControl.h"
 #import "DCCPropertyReactor.h"
-#import "DCCObjectToObserveUsedForTestingProtocol.h"
+#import "DCCExampleViewModel.h"
 @import UIKit;
 
 @interface DCCReactiveExamplePresentationControl()<UITableViewDataSource>
@@ -17,13 +17,13 @@
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
 
 @property (nonatomic, strong) DCCPropertyReactor *propertyReactor;
-@property (nonatomic, strong) id<DCCObjectToObserveUsedForTestingProtocol> viewModel;
+@property (nonatomic, strong) id<DCCExampleViewModel> viewModel;
 
 @end
 
 @implementation DCCReactiveExamplePresentationControl
 
--(void)presentWithViewModel:(id<DCCObjectToObserveUsedForTestingProtocol>)viewModel {
+-(void)presentWithViewModel:(id<DCCExampleViewModel>)viewModel {
     self.propertyReactor = [[DCCPropertyReactor alloc] init];
     self.viewModel = viewModel;
     __weak typeof(self) weakSelf = self;

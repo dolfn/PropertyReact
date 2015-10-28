@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "DCCObservableObject.h"
 
-@protocol DCCObjectToObserveUsedForTestingProtocol <DCCObservableObject>
+@protocol DCCExampleViewModel <DCCObservableObject>
 
 @property (nonatomic, strong, readonly) NSArray *itemsToObserve;
 @property (nonatomic, strong, readonly) NSString *stringToObserve;

@@ -7,12 +7,12 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "DCCObjectToObserveUsedForTesting.h"
+#import "DCCViewModelToReactTo.h"
 #import "DCCPropertyReactor.h"
 
 @interface DCCPropertyReactingTestCase : XCTestCase
 
-@property (nonatomic, strong) DCCObjectToObserveUsedForTesting *objectToObserve;
+@property (nonatomic, strong) DCCViewModelToReactTo *objectToObserve;
 @property (nonatomic, strong) DCCPropertyReactor *propertyReactor;
 
 @end
@@ -21,7 +21,7 @@
 
 - (void)setUp {
     [super setUp];
-    self.objectToObserve = [[DCCObjectToObserveUsedForTesting alloc] init];
+    self.objectToObserve = [[DCCViewModelToReactTo alloc] init];
     self.propertyReactor = [[DCCPropertyReactor alloc] init];
 }
 
@@ -110,17 +110,6 @@
     self.propertyReactor = nil;
     [self.objectToObserve updateStringToObserve];
     [self.objectToObserve setItems];
-}
-
--(void)testRemovingReactionsWhenTheReactorIsDealloced {
-    [self.propertyReactor reactToSettingValueToPropertyWithName:NSStringFromSelector(@selector(stringToObserve)) ofObject:self.objectToObserve withBlock:^(NSKeyValueChange changeKind, NSArray *changedIndexes) {
-        XCTFail(@"Should not react to a property change, if the reactor is nilled/dealloced.");
-    }];
-    [self.propertyReactor reactToSettingValueToPropertyWithName:NSStringFromSelector(@selector(itemsToObserve)) ofObject:self.objectToObserve withBlock:^(NSKeyValueChange changeKind, NSArray *changedIndexes) {
-        XCTFail(@"Should not react to a property change, if the reactor is nilled/dealloced.");
-    }];
-    self.propertyReactor = nil;
-    [self.objectToObserve updateStringToObserve];
 }
 
 @end

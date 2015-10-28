@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DCCObjectToObserveUsedForTestingProtocol.h"
+#import "DCCExampleViewModel.h"
 
-@interface DCCObjectToObserveUsedForTesting : NSObject <DCCObjectToObserveUsedForTestingProtocol>
+@interface DCCViewModelToReactTo : NSObject <DCCExampleViewModel>
 
 @end

@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol DCCObjectToObserveUsedForTestingProtocol;
+@protocol DCCExampleViewModel;
 
 @interface DCCReactiveExamplePresentationControl : NSObject
 
--(void)presentWithViewModel:(id<DCCObjectToObserveUsedForTestingProtocol>)viewModel;
+-(void)presentWithViewModel:(id<DCCExampleViewModel>)viewModel;
 
 @end

@@ -71,12 +71,12 @@
                         </view>
                     </navigationItem>
                     <connections>
-                        <outlet property="objectToReactToOnPropertyChanges" destination="h2y-i8-5oq" id="Muq-ox-TyC"/>
                         <outlet property="presentationControl" destination="VcZ-gz-mZ7" id="sRu-9w-TGU"/>
+                        <outlet property="viewModel" destination="h2y-i8-5oq" id="WfQ-wD-6Ab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="h2y-i8-5oq" customClass="DCCObjectToObserveUsedForTesting"/>
+                <customObject id="h2y-i8-5oq" customClass="DCCViewModelToReactTo"/>
                 <customObject id="VcZ-gz-mZ7" customClass="DCCReactiveExamplePresentationControl">
                     <connections>
                         <outlet property="itemsTableView" destination="JFF-tc-yFb" id="TeR-kx-YbK"/>

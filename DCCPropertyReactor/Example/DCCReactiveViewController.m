@@ -7,12 +7,12 @@
 //
 
 #import "DCCReactiveViewController.h"
-#import "DCCObjectToObserveUsedForTesting.h"
+#import "DCCViewModelToReactTo.h"
 #import "DCCReactiveExamplePresentationControl.h"
 
 @interface DCCReactiveViewController ()
 
-@property (nonatomic, strong) IBOutlet DCCObjectToObserveUsedForTesting *objectToReactToOnPropertyChanges;
+@property (nonatomic, strong) IBOutlet DCCViewModelToReactTo *viewModel;
 @property (nonatomic, strong) IBOutlet DCCReactiveExamplePresentationControl *presentationControl;
 
 @end
@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self.presentationControl presentWithViewModel:self.objectToReactToOnPropertyChanges];
+    [self.presentationControl presentWithViewModel:self.viewModel];
     NSArray* toolbarItems = @[
                               [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
                                                                             target:self
@@ -43,23 +43,23 @@
 }
 
 -(void)didTapToAddNewItem:(id)sender {
-    [self.objectToReactToOnPropertyChanges addNewItem];
+    [self.viewModel addNewItem];
 }
 
 -(void)didTapToUpdateAnItem:(id)sender {
-    [self.objectToReactToOnPropertyChanges updateAnItem];
+    [self.viewModel updateAnItem];
 }
 
 -(void)didTapToDeleteAnItem:(id)sender {
-    [self.objectToReactToOnPropertyChanges removeAnItem];
+    [self.viewModel removeAnItem];
 }
 
 -(void)didTapToSetItems:(id)sender {
-    [self.objectToReactToOnPropertyChanges setItems];
+    [self.viewModel setItems];
 }
 
 -(void)didTapToUpdateTitle:(id)sender {
-    [self.objectToReactToOnPropertyChanges updateStringToObserve];
+    [self.viewModel updateStringToObserve];
 }
 
 @end
